@@ -344,7 +344,7 @@
     <Compile Include="IffForm\_cue.cs" />
     <Compile Include="IffForm\WaveFormat.cs" />
     <Compile Include="IffForm\_inst.cs" />
-    <Compile Include="Strings.Designer1.cs">
+    <Compile Include="Strings.Designer.cs">
       <DependentUpon>Strings.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
@@ -409,13 +409,14 @@
       <DependentUpon>WaveOutTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings.resx">
-      <LastGenOutput>Strings.Designer1.cs</LastGenOutput>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
       <CustomToolNamespace>System</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
-</PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>
