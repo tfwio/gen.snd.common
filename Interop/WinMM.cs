@@ -23,7 +23,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.Interop
+namespace gen.snd.Interop
 {
 	[ StructLayout( LayoutKind.Sequential, CharSet=CharSet.Auto )]
 	public struct midi_caps

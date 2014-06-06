@@ -9,7 +9,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.Midi.Structures
+namespace gen.snd.Midi.Structures
 {
 	[ StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi )]
 	public struct smf_head {

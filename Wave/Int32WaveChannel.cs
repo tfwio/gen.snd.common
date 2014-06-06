@@ -24,13 +24,13 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 	/// <summary>
 	/// We've renamed the SampleWaveProvider to this so we can build on it.
-	/// This currently is the class used in the DspAudio MainForm for playing wave samples.
+	/// This currently is the class used in the gen.snd MainForm for playing wave samples.
 	/// There are some obvious errors.
 	/// </summary>
 	public class Int32WaveChannel : Int32WaveChannelBase

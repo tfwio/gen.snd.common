@@ -24,9 +24,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 	static class RiffUtil
 	{
@@ -52,9 +52,9 @@ namespace DspAudio.Wave
 		/// <summary>
 		/// Convert our WaveFormat to NAudio compatible WaveFormat.
 		/// </summary>
-		/// <param name="riff">DspAudio.IffForm.WaveFormat</param>
+		/// <param name="riff">gen.snd.IffForm.WaveFormat</param>
 		/// <returns>NAudio compatible WaveFormat</returns>
-		public static NAudio.Wave.WaveFormat ToNAudio(DspAudio.IffForm.WaveFormat riff)
+		public static NAudio.Wave.WaveFormat ToNAudio(gen.snd.IffForm.WaveFormat riff)
 		{
 			return new NAudio.Wave.WaveFormat(
 				Convert.ToInt32(riff.fmtRate),

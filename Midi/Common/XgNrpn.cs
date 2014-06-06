@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	
 	public class XgNrpn

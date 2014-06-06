@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// This is exactly the same as MidiMetaMessage with clarification on the type.

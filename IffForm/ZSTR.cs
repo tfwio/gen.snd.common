@@ -6,7 +6,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.IffForm
+namespace gen.snd.IffForm
 {
 	[StructLayout(LayoutKind.Sequential) ]
 	public struct ZSTR

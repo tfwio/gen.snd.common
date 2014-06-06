@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio.Formats;
+using gen.snd.Formats;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	static class ListHelper
 	{

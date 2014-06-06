@@ -19,7 +19,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
 #endregion
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	partial class WaveOutTestForm
 	{
@@ -55,7 +55,7 @@ namespace DspAudio.Forms
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.knob1 = new DspAudio.Forms.Knob();
+			this.knob1 = new gen.snd.Forms.Knob();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.volumeSlider1 = new NAudio.Gui.VolumeSlider();
 			this.button1 = new System.Windows.Forms.Button();
@@ -114,7 +114,7 @@ namespace DspAudio.Forms
 			this.knob1.Location = new System.Drawing.Point(12, 39);
 			this.knob1.Maximum = 127;
 			this.knob1.Minimum = 0;
-			this.knob1.Mode = DspAudio.Forms.KnobType.Knob;
+			this.knob1.Mode = gen.snd.Forms.KnobType.Knob;
 			this.knob1.Name = "knob1";
 			this.knob1.Offset = 1;
 			this.knob1.RowsCols = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -233,7 +233,7 @@ namespace DspAudio.Forms
 			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label label2;
-		private DspAudio.Forms.Knob knob1;
+		private gen.snd.Forms.Knob knob1;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;

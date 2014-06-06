@@ -25,7 +25,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio.Formats;
+using gen.snd.Formats;
 
 namespace ititoo
 {

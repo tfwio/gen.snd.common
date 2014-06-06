@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public interface IMidiClock : IMidiClock_MBQTPF
 	{

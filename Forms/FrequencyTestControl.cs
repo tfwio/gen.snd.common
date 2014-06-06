@@ -24,7 +24,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	/// <summary>
 	/// Description of FrequencyTestControl.

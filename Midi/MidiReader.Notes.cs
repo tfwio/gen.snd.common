@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	partial class MidiReader : IMidiParser_Notes
 	{

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	public interface IMidiParser_Notes
 	{

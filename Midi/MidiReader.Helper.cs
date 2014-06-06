@@ -4,9 +4,9 @@
  */
 using System;
 using System.IO;
-using DspAudio.Midi.Structures;
+using gen.snd.Midi.Structures;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	partial class MidiReader
 	{

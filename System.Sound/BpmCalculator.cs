@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	// m is the key number
 	// Note: we're tuning to 440

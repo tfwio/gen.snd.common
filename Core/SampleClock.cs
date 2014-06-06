@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public class SampleClock : IClock
 	{

@@ -7,7 +7,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.IffForm
+namespace gen.snd.IffForm
 {
 	
 	public enum smpLoopType : int

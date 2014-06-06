@@ -21,7 +21,7 @@
 #region Using
 using System;
 #endregion
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	/// <summary>
 	/// 16-bit message type

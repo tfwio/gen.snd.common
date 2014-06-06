@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.IffForm
+namespace gen.snd.IffForm
 {
 	[StructLayout(LayoutKind.Sequential, Pack=1, CharSet=CharSet.Ansi) ]
 	public struct INFO

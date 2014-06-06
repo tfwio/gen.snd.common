@@ -24,9 +24,9 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio.Midi;
+using gen.snd.Midi;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 
 	/// <summary>

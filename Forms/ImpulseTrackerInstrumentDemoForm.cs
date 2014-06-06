@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio.Formats;
+using gen.snd.Formats;
 #endregion
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 
 	public class ImpulseTrackerInstrumentDemoForm : System.Windows.Forms.Form

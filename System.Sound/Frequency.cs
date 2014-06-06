@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	/// <summary>
 	/// This class should be used to generate frequency tables.

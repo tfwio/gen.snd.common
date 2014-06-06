@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// provided for a little clarity, though you can identify the

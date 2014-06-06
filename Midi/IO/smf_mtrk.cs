@@ -13,7 +13,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace DspAudio.Midi.Structures
+namespace gen.snd.Midi.Structures
 {
 
 	public struct smf_mtrk

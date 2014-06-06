@@ -22,7 +22,7 @@
 #endregion
 using System;
 
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	/// <summary>Channel Helper Class</summary>
 	static public class ChannelType
@@ -31,22 +31,22 @@ namespace DspAudio.Midi.Common
 		{
 			switch (id)
 			{
-					case MetaMsg8.EndOfTrack: return DspAudio.Midi.Common.ChannelType.EndTrack;
-					case MetaMsg8.SequenceNo: return DspAudio.Midi.Common.ChannelType.SequenceNumber;
-					case MetaMsg8.Text: return DspAudio.Midi.Common.ChannelType.TextEvent;
-					case MetaMsg8.Copyright: return DspAudio.Midi.Common.ChannelType.Copyright;
-					case MetaMsg8.SequenceName: return DspAudio.Midi.Common.ChannelType.SequenceName;
-					case MetaMsg8.InstrumentName: return DspAudio.Midi.Common.ChannelType.InstrumentName;
-					case MetaMsg8.Lyric: return DspAudio.Midi.Common.ChannelType.LyricMarker;
-					case MetaMsg8.Marker: return DspAudio.Midi.Common.ChannelType.Marker;
-					case MetaMsg8.Cue: return DspAudio.Midi.Common.ChannelType.CuePoint;
-					case MetaMsg8.Chanel: return DspAudio.Midi.Common.ChannelType.Channel;
-					case MetaMsg8.Port: return DspAudio.Midi.Common.ChannelType.Port;
-					case MetaMsg8.Tempo: return DspAudio.Midi.Common.ChannelType.Tempo;
-					case MetaMsg8.SMPTE: return DspAudio.Midi.Common.ChannelType.SMPTE;
-					case MetaMsg8.TimeSignature: return DspAudio.Midi.Common.ChannelType.TimeSignature;
-					case MetaMsg8.KeySignature: return DspAudio.Midi.Common.ChannelType.KeySignature;
-					case MetaMsg8.SystemExclusive: return DspAudio.Midi.Common.ChannelType.SYSEX;
+					case MetaMsg8.EndOfTrack: return gen.snd.Midi.Common.ChannelType.EndTrack;
+					case MetaMsg8.SequenceNo: return gen.snd.Midi.Common.ChannelType.SequenceNumber;
+					case MetaMsg8.Text: return gen.snd.Midi.Common.ChannelType.TextEvent;
+					case MetaMsg8.Copyright: return gen.snd.Midi.Common.ChannelType.Copyright;
+					case MetaMsg8.SequenceName: return gen.snd.Midi.Common.ChannelType.SequenceName;
+					case MetaMsg8.InstrumentName: return gen.snd.Midi.Common.ChannelType.InstrumentName;
+					case MetaMsg8.Lyric: return gen.snd.Midi.Common.ChannelType.LyricMarker;
+					case MetaMsg8.Marker: return gen.snd.Midi.Common.ChannelType.Marker;
+					case MetaMsg8.Cue: return gen.snd.Midi.Common.ChannelType.CuePoint;
+					case MetaMsg8.Chanel: return gen.snd.Midi.Common.ChannelType.Channel;
+					case MetaMsg8.Port: return gen.snd.Midi.Common.ChannelType.Port;
+					case MetaMsg8.Tempo: return gen.snd.Midi.Common.ChannelType.Tempo;
+					case MetaMsg8.SMPTE: return gen.snd.Midi.Common.ChannelType.SMPTE;
+					case MetaMsg8.TimeSignature: return gen.snd.Midi.Common.ChannelType.TimeSignature;
+					case MetaMsg8.KeySignature: return gen.snd.Midi.Common.ChannelType.KeySignature;
+					case MetaMsg8.SystemExclusive: return gen.snd.Midi.Common.ChannelType.SYSEX;
 					default: return "UNKNOWN MESSAGE";
 			}
 		}

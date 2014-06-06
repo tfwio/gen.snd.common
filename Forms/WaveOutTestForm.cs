@@ -25,10 +25,10 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-using DspAudio.Wave;
+using gen.snd.Wave;
 using NAudio.Wave;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	/// <summary>
 	/// Provide a wave-file to a WaveOut Device.

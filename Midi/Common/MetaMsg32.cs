@@ -20,7 +20,7 @@
 #endregion
 using System;
 
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	/// <summary>
 	/// 32-bit coded message types such as 0001-00A0

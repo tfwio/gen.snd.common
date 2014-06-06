@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
-namespace DspAudio.Modules
+namespace gen.snd.Modules
 {
 	public class AudioDeviceConfiguration
 	{

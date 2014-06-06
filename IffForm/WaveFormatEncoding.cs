@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DspAudio.IffForm
+namespace gen.snd.IffForm
 {
 	/// <summary>
 	/// (stolen from NAudio)

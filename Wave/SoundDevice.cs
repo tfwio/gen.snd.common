@@ -24,7 +24,7 @@ using System;
 using System.Collections.Generic;
 using NAudio.Wave;
 
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 	public class SoundDevice_Mixer : IDisposable, IWaveProvider
 	{

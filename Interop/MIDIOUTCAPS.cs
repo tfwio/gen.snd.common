@@ -23,7 +23,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.Interop
+namespace gen.snd.Interop
 {
 	/// <summary>
 	/// Note usage of CharSet.Auto in GetDevCaps.

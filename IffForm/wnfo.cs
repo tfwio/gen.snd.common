@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DspAudio.IffForm
+namespace gen.snd.IffForm
 {
 	public enum	wnfo : int
 	{

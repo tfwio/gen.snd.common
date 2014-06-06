@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	static class MidiHelper
 	{

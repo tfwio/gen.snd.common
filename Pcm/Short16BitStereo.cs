@@ -23,7 +23,7 @@
 using System;
 using System.IO;
 
-namespace DspAudio.Pcm
+namespace gen.snd.Pcm
 {
 	public struct Short16BitStereo : IBinaryIO<Short16BitStereo>
 	{

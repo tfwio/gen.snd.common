@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// four byte data slot convertable to int.

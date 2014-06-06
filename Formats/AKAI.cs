@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.Formats
+namespace gen.snd.Formats
 {
 	public class AKP
 	{

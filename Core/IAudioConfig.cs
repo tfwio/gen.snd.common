@@ -22,7 +22,7 @@
 
 using System;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public interface IAudioConfig
 	{

@@ -9,12 +9,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq.Expressions;
 
-using DspAudio.Midi.Common;
-using DspAudio.Midi.Structures;
+using gen.snd.Midi.Common;
+using gen.snd.Midi.Structures;
 using CliEvent = System.EventArgs;
 using CliHandler = System.EventHandler;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// Pixel translation to midi timing.

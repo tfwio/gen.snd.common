@@ -22,7 +22,7 @@
 using System;
 #endregion
 
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	public enum ChMessage8 : byte
 	{

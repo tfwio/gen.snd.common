@@ -23,7 +23,7 @@
 using System;
 using System.Drawing;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public class LoopPoint : Loop
 	{

@@ -9,11 +9,11 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-using DspAudio.Midi.Common;
-using DspAudio.Midi.Structures;
+using gen.snd.Midi.Common;
+using gen.snd.Midi.Structures;
 using CliEvent = System.EventArgs;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	partial class MidiReader : IMidiParser_Resources
 	{

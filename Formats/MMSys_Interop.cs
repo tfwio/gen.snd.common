@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace DspAudio.Formats
+namespace gen.snd.Formats
 {
 	/// <summary>
 	/// sndPlaySound API

@@ -19,7 +19,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
 #endregion
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	partial class MidiKeyFreqTestForm
 	{

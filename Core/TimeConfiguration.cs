@@ -21,10 +21,10 @@
 #endregion
 
 using System;
-using DspAudio.Midi;
-using DspAudio.Midi.Common;
+using gen.snd.Midi;
+using gen.snd.Midi.Common;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public class TimeConfiguration : ITimeConfiguration
 	{

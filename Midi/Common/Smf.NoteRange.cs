@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	/// <summary>
 	/// Note-Range is a range of possible values and is used to determine weather or

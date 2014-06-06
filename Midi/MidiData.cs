@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// Currently, we're not bothering to store the Midi Track Offset because

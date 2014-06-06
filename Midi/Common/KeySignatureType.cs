@@ -23,12 +23,12 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-using DspAudio.Midi.Common;
-using DspAudio.Midi.Structures;
-using MetaMsg32 = DspAudio.Midi.Common.MetaMsg32;
+using gen.snd.Midi.Common;
+using gen.snd.Midi.Structures;
+using MetaMsg32 = gen.snd.Midi.Common.MetaMsg32;
 
 #endregion
-namespace DspAudio.Midi.Common
+namespace gen.snd.Midi.Common
 {
 	public enum KeySignatureType : byte
 	{

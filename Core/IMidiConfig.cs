@@ -21,9 +21,9 @@
 #endregion
 
 using System;
-using DspAudio.Midi;
+using gen.snd.Midi;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public interface IMidiConfig
 	{

@@ -21,9 +21,9 @@
 #endregion
 using System;
 using System.Collections.Generic;
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 //ppqPos = (samplePos / sampleRate) * (tempo / 60.);
-namespace DspAudio.Generators
+namespace gen.snd.Generators
 {
 	public class TimeController
 	{

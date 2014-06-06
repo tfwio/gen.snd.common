@@ -23,7 +23,7 @@
 using System;
 using NAudioWaveFormat = NAudio.Wave.WaveFormat;
 
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 	/// <summary>
 	/// Provides wave samples to a given wave device.

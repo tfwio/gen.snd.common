@@ -23,7 +23,7 @@
 using System;
 using NAudio.Wave;
 
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 
 	public interface IWaveChannel: IWaveProvider, IDisposable

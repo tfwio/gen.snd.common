@@ -19,7 +19,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
 #endregion
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	partial class FrequencyTestForm
 	{
@@ -49,7 +49,7 @@ namespace DspAudio.Forms
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.frequencyTestControl1 = new DspAudio.Forms.FrequencyTestControl();
+			this.frequencyTestControl1 = new gen.snd.Forms.FrequencyTestControl();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.button1 = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
@@ -271,6 +271,6 @@ namespace DspAudio.Forms
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox tFreq;
 		private System.Windows.Forms.Panel panel1;
-		private DspAudio.Forms.FrequencyTestControl frequencyTestControl1;
+		private gen.snd.Forms.FrequencyTestControl frequencyTestControl1;
 	}
 }

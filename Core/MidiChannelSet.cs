@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
-namespace DspAudio
+namespace gen.snd
 {
 	public class MidiChannelSet
 	{

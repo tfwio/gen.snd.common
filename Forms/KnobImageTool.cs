@@ -28,9 +28,9 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Forms;
 
-using DspAudio.Midi;
+using gen.snd.Midi;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	public class KnobImageTool : Form
 	{
@@ -81,7 +81,7 @@ namespace DspAudio.Forms
 			this.tCount = new System.Windows.Forms.NumericUpDown();
 			this.button2 = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.knob1 = new DspAudio.Forms.Knob();
+			this.knob1 = new gen.snd.Forms.Knob();
 			this.button1 = new System.Windows.Forms.Button();
 			this.sfd = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -273,7 +273,7 @@ namespace DspAudio.Forms
 			this.knob1.Location = new System.Drawing.Point(15, 19);
 			this.knob1.Maximum = 0;
 			this.knob1.Minimum = 0;
-			this.knob1.Mode = DspAudio.Forms.KnobType.Knob;
+			this.knob1.Mode = gen.snd.Forms.KnobType.Knob;
 			this.knob1.Name = "knob1";
 			this.knob1.Offset = 1;
 			this.knob1.RowsCols = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -353,7 +353,7 @@ namespace DspAudio.Forms
 		private System.Windows.Forms.NumericUpDown tWidth;
 		private System.Windows.Forms.NumericUpDown tHeight;
 		private System.Windows.Forms.Label label1;
-		private DspAudio.Forms.Knob knob1;
+		private gen.snd.Forms.Knob knob1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.OpenFileDialog ofd;

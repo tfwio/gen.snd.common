@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 
-namespace DspAudio.Formats
+namespace gen.snd.Formats
 {
 	/// <summary>
 	/// SoundFont v2.4

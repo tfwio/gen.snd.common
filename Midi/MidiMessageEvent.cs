@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-using DspAudio.Midi.Structures;
+using gen.snd.Midi.Structures;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	public class MidiMessageEvent : EventArgs
 	{

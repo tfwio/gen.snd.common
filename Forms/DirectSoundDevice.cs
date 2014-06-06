@@ -12,9 +12,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-using DspAudio.Interop;
+using gen.snd.Interop;
 
-namespace DspAudio.Forms
+namespace gen.snd.Forms
 {
 	public class DirectSoundDevice : UserControl
 	{

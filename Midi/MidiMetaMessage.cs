@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	/// <summary>
 	/// it seems that all meta messages have contained within them a

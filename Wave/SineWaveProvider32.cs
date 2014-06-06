@@ -28,10 +28,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 using NAudio.Wave;
 using WFormat = NAudio.Wave.WaveFormat;
-namespace DspAudio.Wave
+namespace gen.snd.Wave
 {
 	// http://mark-dot-net.blogspot.com/2009/10/playback-of-sine-wave-in-naudio.html
 	

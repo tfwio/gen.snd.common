@@ -4,7 +4,7 @@
  */
 using System;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 
 	public class MidiNote : MidiData

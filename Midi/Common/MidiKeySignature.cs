@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 
-using DspAudio.Midi.Common;
-using DspAudio.Midi.Structures;
+using gen.snd.Midi.Common;
+using gen.snd.Midi.Structures;
 using CliEvent = System.EventArgs;
 using CliHandler = System.EventHandler;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	public class MidiKeySignature
 	{

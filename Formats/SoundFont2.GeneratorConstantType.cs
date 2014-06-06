@@ -7,11 +7,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 
-using DspAudio.IffForm;
+using gen.snd.IffForm;
 
 //using System.Windows.Forms;
 
-namespace DspAudio.Formats
+namespace gen.snd.Formats
 {
 	public partial class SoundFont2
 	{
