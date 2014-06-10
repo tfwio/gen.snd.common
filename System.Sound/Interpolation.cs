@@ -28,7 +28,7 @@ namespace System.Sound
 	{
 	}
 	/// <summary>
-	/// A interpolation process.
+	/// A interpolation process which has no bearing  (non functional)
 	/// </summary>
 	/// <remarks>
 	/// We should derive this class on a wave-processor such as that
