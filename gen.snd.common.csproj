@@ -60,7 +60,7 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="NAudio">
-      <HintPath>..\..\AssemblyReferences\NAudio\Debug\NAudio.dll</HintPath>
+      <HintPath>..\..\AssemblyReferences\NAudio\r559-v1.7.1.17\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Condition=" '$(Platform)' != 'XP_x86' " Include="System.Core">
