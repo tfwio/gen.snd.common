@@ -18,22 +18,33 @@ namespace gen.snd.Forms
 
 	public interface IUi
 	{
+		/// <summary></summary>
 		Rectangle ClientRectangle { get ; }
 	}
 	public interface IUiOffset
 	{
+		/// <summary></summary>
 		event EventHandler XOffsetChanged;
+		/// <summary></summary>
 		event EventHandler YOffsetChanged;
 	}
 	internal interface IKnobSetting : IUi
 	{
+		/// <summary></summary>
 		int Maximum { get; set; }
+		/// <summary></summary>
 		int Minimum { get; set; }
+		/// <summary></summary>
 		int Length { get; set; }
+		/// <summary></summary>
 		KnobType Mode { get; set; }
+		/// <summary></summary>
 		int Offset { get; set; }
+		/// <summary></summary>
 		int KnobFrameIndex { get; set; }
+		/// <summary></summary>
 		Rectangle RowsCols { get; set; }
+		/// <summary></summary>
 		Image KnobImage { get; set; }
 	}
 }
