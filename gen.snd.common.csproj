@@ -322,17 +322,17 @@
     </Compile>
     <Compile Include="Source\System.Sound\Frequency.cs" />
     <Compile Include="Source\System.Sound\Interpolation.cs" />
-    <Compile Include="Wave\BufferStatus.cs" />
-    <Compile Include="Wave\Int32WaveChannel.cs" />
-    <Compile Include="Wave\Int32WaveStream.cs" />
-    <Compile Include="Wave\IWaveChannel.cs" />
-    <Compile Include="Wave\RiffUtil.cs" />
-    <Compile Include="Wave\SineWaveProvider32.cs" />
-    <Compile Include="Wave\SoundDevice.cs" />
+    <Compile Include="Source\Wave\BufferStatus.cs" />
+    <Compile Include="Source\Wave\Int32WaveChannel.cs" />
+    <Compile Include="Source\Wave\Int32WaveStream.cs" />
+    <Compile Include="Source\Wave\IWaveChannel.cs" />
+    <Compile Include="Source\Wave\RiffUtil.cs" />
+    <Compile Include="Source\Wave\SineWaveProvider32.cs" />
+    <Compile Include="Source\Wave\SoundDevice.cs" />
     <Compile Include="Source\System.Sound\BpmCalculator.cs" />
     <Compile Include="Source\System.Sound\IOHelper.cs" />
     <Compile Include="Source\System.Sound\MidiHelper.cs" />
-    <Compile Include="Wave\Int32WaveChannelBase.cs" />
+    <Compile Include="Source\Wave\Int32WaveChannelBase.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
