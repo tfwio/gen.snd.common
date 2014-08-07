@@ -483,16 +483,18 @@ namespace gen.snd.Formats
 		/// <summary>
 		/// Presets
 		/// </summary>
-		/// <remarks>The PHDR sub-chunk is a required sub-chunk listing all presets within the SoundFont compatible file.
+		/// <remarks>
+		/// The PHDR sub-chunk is a required sub-chunk listing all presets within the SoundFont compatible file.
 		/// It is always a multiple of thirty-eight bytes in length, and contains a minimum of two records,
-		/// one record for each preset and one for a terminal record according to the structure.</remarks>
+		/// one record for each preset and one for a terminal record according to the structure.
+		/// </remarks>
 		[StructLayout(LayoutKind.Sequential)]
 		public struct PHDR // (n) * 38 bytes long
 		{
 			public char[]	presetName;
-			public short		preset;
+			public short	preset;
 			public short 	bank;
-			public short		presetBagIndex;
+			public short	presetBagIndex;
 			public int		library;
 			public int		genera;
 			public int		morphology;

@@ -1,15 +1,6 @@
-﻿/*
- * tfooo with #develop
- */
+﻿/* tfooo with #develop */
 
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Runtime.InteropServices;
-
-using gen.snd.IffForm;
-
-//using System.Windows.Forms;
 
 namespace gen.snd.Formats
 {

@@ -12,14 +12,14 @@ namespace gen.snd.IffForm
 	public struct WaveFormat
 	{
 		[MarshalAs(UnmanagedType.ByValTStr,SizeConst=4)]
-		public	string		ckID;
-		public	int				ckLength;
+		public	string	ckID;
+		public	int		ckLength;
 		
-		public	short			fmtTag;
-		public	ushort		fmtChannels;
-		public	uint			fmtRate;
-		public	uint			fmtBPSec;
-		public	ushort		fmtBlock;
-		public	ushort		fmtBPSmp;
+		public	short	fmtTag;
+		public	ushort	fmtChannels;
+		public	uint	fmtRate;
+		public	uint	fmtBPSec;
+		public	ushort	fmtBlock;
+		public	ushort	fmtBPSmp;
 	}
 }

@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using gen.snd.Formats;
+using gen.snd.Formats.ImpluseTracker;
+
 #endregion
 namespace gen.snd.Forms
 {
@@ -77,17 +79,19 @@ namespace gen.snd.Forms
 			int x=0; foreach(ITI.keyMap kmp in mo.ITI_INST.impNoteMap)
 			{
 				string mx;
+				
 				if ( kmp.epVal==0xFF ) mx = null;
 				else if(kmp.epVal==0xFE) mx = "[FLAG!]";
 				else mx = mo.NoteName[kmp.epVal];
+				
+				ListViewItem mam = this.lins.Items.Add(x.ToString("00#"));
+				
 				if (kmp.epPos-1 < mo.ITI_SMPH.Length && kmp.epPos > 0)
 				{
-					ListViewItem mam = this.lins.Items.Add(x.ToString("00#"));
 					mam.SubItems.AddRange(new string[]{ mo.NoteName[(x++)],mo.ITI_SMPH[kmp.epPos-1].impsSampleName,mx });
 				}
 				else if (kmp.epPos == 0)
 				{
-					ListViewItem mam = this.lins.Items.Add(x.ToString("00#"));
 					mam.SubItems.AddRange(new string[]{ mo.NoteName[(x++)], "[empty]", mx });
 				}
 				else
@@ -266,15 +270,15 @@ namespace gen.snd.Forms
 			// 
 			this.statusStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.ts_menu_file,
-									this.toolStripStatusLabel3,
-									this.ts_nsmp,
-									this.toolStripStatusLabel1,
-									this.ts_nna,
-									this.toolStripStatusLabel5,
-									this.toolStripStatusLabel2,
-									this.toolStripDropDownButton1,
-									this.toolStripStatusLabel4});
+			                                 	this.ts_menu_file,
+			                                 	this.toolStripStatusLabel3,
+			                                 	this.ts_nsmp,
+			                                 	this.toolStripStatusLabel1,
+			                                 	this.ts_nna,
+			                                 	this.toolStripStatusLabel5,
+			                                 	this.toolStripStatusLabel2,
+			                                 	this.toolStripDropDownButton1,
+			                                 	this.toolStripStatusLabel4});
 			this.statusStrip1.Location = new System.Drawing.Point(0, 331);
 			this.statusStrip1.Name = "statusStrip1";
 			this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 8, 0);
@@ -285,10 +289,10 @@ namespace gen.snd.Forms
 			// ts_menu_file
 			// 
 			this.ts_menu_file.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.openToolStripMenuItem,
-									this.saveITIInstrumentToolStripMenuItem,
-									this.toolStripMenuItem1,
-									this.exitToolStripMenuItem});
+			                                         	this.openToolStripMenuItem,
+			                                         	this.saveITIInstrumentToolStripMenuItem,
+			                                         	this.toolStripMenuItem1,
+			                                         	this.exitToolStripMenuItem});
 			this.ts_menu_file.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
 			this.ts_menu_file.Name = "ts_menu_file";
 			this.ts_menu_file.ShowDropDownArrow = false;
@@ -363,8 +367,8 @@ namespace gen.snd.Forms
 			// toolStripDropDownButton1
 			// 
 			this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.listSettingsToolStripMenuItem,
-									this.toolsToolStripMenuItem});
+			                                                     	this.listSettingsToolStripMenuItem,
+			                                                     	this.toolsToolStripMenuItem});
 			this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
 			this.toolStripDropDownButton1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
@@ -375,9 +379,9 @@ namespace gen.snd.Forms
 			// listSettingsToolStripMenuItem
 			// 
 			this.listSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.listForeToolStripMenuItem,
-									this.listBgToolStripMenuItem,
-									this.fontsToolStripMenuItem});
+			                                                          	this.listForeToolStripMenuItem,
+			                                                          	this.listBgToolStripMenuItem,
+			                                                          	this.fontsToolStripMenuItem});
 			this.listSettingsToolStripMenuItem.Name = "listSettingsToolStripMenuItem";
 			this.listSettingsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
 			this.listSettingsToolStripMenuItem.Text = "[gui-color]";
@@ -397,7 +401,7 @@ namespace gen.snd.Forms
 			// fontsToolStripMenuItem
 			// 
 			this.fontsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.listsToolStripMenuItem});
+			                                                   	this.listsToolStripMenuItem});
 			this.fontsToolStripMenuItem.Name = "fontsToolStripMenuItem";
 			this.fontsToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
 			this.fontsToolStripMenuItem.Text = "[fonts]";
@@ -411,7 +415,7 @@ namespace gen.snd.Forms
 			// toolsToolStripMenuItem
 			// 
 			this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.markusToolStripMenuItem});
+			                                                   	this.markusToolStripMenuItem});
 			this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
 			this.toolsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
 			this.toolsToolStripMenuItem.Text = "[tools]";
@@ -419,8 +423,8 @@ namespace gen.snd.Forms
 			// markusToolStripMenuItem
 			// 
 			this.markusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.showtreeToolStripMenuItem,
-									this.xphidetreeToolStripMenuItem});
+			                                                    	this.showtreeToolStripMenuItem,
+			                                                    	this.xphidetreeToolStripMenuItem});
 			this.markusToolStripMenuItem.Name = "markusToolStripMenuItem";
 			this.markusToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
 			this.markusToolStripMenuItem.Text = "[toggle]";

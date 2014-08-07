@@ -23,7 +23,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace gen.snd.Formats
+namespace gen.snd.Formats.ImpluseTracker
 {
 	public class ITI
 	{
@@ -63,7 +63,6 @@ namespace gen.snd.Formats
 		}
 		
 		#region Properties
-
 		
 		public impi ITI_INST {
 			get { return iti_instrument; }
@@ -116,9 +115,9 @@ namespace gen.snd.Formats
 		[ StructLayout( LayoutKind.Sequential, Pack=1, CharSet=CharSet.Ansi )]
 		public struct impi
 		{
-			[MarshalAs(UnmanagedType.ByValTStr,SizeConst=4)]
+			[MarshalAs(UnmanagedType.ByValTStr, SizeConst=4)]
 			public string						IMPI;
-			[MarshalAs(UnmanagedType.ByValTStr,SizeConst=12)]
+			[MarshalAs(UnmanagedType.ByValTStr, SizeConst=12)]
 			public string						impDosFileName;
 			public byte							impNull0;
 			public NewNoteAction				impNewNoteAction;
@@ -134,19 +133,19 @@ namespace gen.snd.Formats
 			public short						impTrackVers;
 			public byte							impNumberOfSamples;
 			public byte							impNull1;
-			[MarshalAs(UnmanagedType.ByValTStr,SizeConst=26)]
+			[MarshalAs(UnmanagedType.ByValTStr, SizeConst=26)]
 			public string						impInstrumentName;
 			public byte							impIFC;
 			public byte							impIFR;
 			public byte							impMCh;
 			public byte							impMPr;
 			public short						impMidiBank;
-			[MarshalAs(UnmanagedType.ByValArray,SizeConst=120)]
-			public keyMap[]	impNoteMap;
+			[MarshalAs(UnmanagedType.ByValArray, SizeConst=120)]
+			public keyMap[]						impNoteMap;
 			public envL							impVolEnvelop;
 			public envL							impPanEnvelop;
 			public envL							impEFXEnvelop;
-			[MarshalAs(UnmanagedType.ByValTStr,SizeConst=7)]
+			[MarshalAs(UnmanagedType.ByValTStr, SizeConst=7)]
 			public string						impPadding;
 		}
 		

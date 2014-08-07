@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>gen.snd</RootNamespace>
     <AssemblyName>gen.snd.common</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <TargetFrameworkProfile />
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
@@ -42,7 +42,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <BaseAddress>4194304</BaseAddress>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <RegisterForComInterop>False</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <FileAlignment>4096</FileAlignment>
@@ -149,6 +149,21 @@
     <Compile Include="Source\Core\Loop.cs" />
     <Compile Include="Source\Core\MidiChannelSet.cs" />
     <Compile Include="Source\Core\PianoCalculator.cs" />
+    <Compile Include="Source\Formats\IffForm\CHUNK.cs" />
+    <Compile Include="Source\Formats\IffForm\ChunkCollection.cs" />
+    <Compile Include="Source\Formats\IffForm\ChunkFact.cs" />
+    <Compile Include="Source\Formats\IffForm\INFO.cs" />
+    <Compile Include="Source\Formats\IffForm\INFOsub.cs" />
+    <Compile Include="Source\Formats\IffForm\iver.cs" />
+    <Compile Include="Source\Formats\IffForm\RiffForm.cs" />
+    <Compile Include="Source\Formats\IffForm\SMPLOOP.cs" />
+    <Compile Include="Source\Formats\IffForm\SUBCHUNK.cs" />
+    <Compile Include="Source\Formats\IffForm\WaveFormat.cs" />
+    <Compile Include="Source\Formats\IffForm\WaveFormatEncoding.cs" />
+    <Compile Include="Source\Formats\IffForm\wnfo.cs" />
+    <Compile Include="Source\Formats\IffForm\ZSTR.cs" />
+    <Compile Include="Source\Formats\IffForm\_cue.cs" />
+    <Compile Include="Source\Formats\IffForm\_inst.cs" />
     <Compile Include="Source\Formats\SoundFont2.GeneratorConstantType.cs">
       <DependentUpon>SoundFont2.cs</DependentUpon>
     </Compile>
@@ -217,8 +232,7 @@
       <DependentUpon>WavePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Source\Generators\IGenerator.cs" />
-    <Compile Include="Source\IffForm\iver.cs" />
-    <Compile Include="Source\IffForm\WaveFormatEncoding.cs" />
+    <Compile Include="Source\Interop\ds2cs_dll_import.cs" />
     <Compile Include="Source\Interop\MIDIOUTCAPS.cs" />
     <Compile Include="Source\Interop\WinMM.cs" />
     <Compile Include="Source\Core\IAudioConfig.cs">
@@ -296,26 +310,19 @@
     <Compile Include="Source\Pcm\Int32BitMono.cs" />
     <Compile Include="Source\Pcm\Short16BitStereo.cs" />
     <Compile Include="Source\Formats\AKAI.cs" />
-    <Compile Include="Source\Formats\ds2cs_dll_import.cs" />
     <Compile Include="Source\Formats\ImpulseTracker.cs" />
     <Compile Include="Source\Formats\MMSys_Interop.cs" />
     <Compile Include="Source\Formats\sf_spec.cs">
       <DependentUpon>SoundFont2.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\IffForm\CHUNK.cs" />
-    <Compile Include="Source\IffForm\ChunkCollection.cs" />
-    <Compile Include="Source\IffForm\ChunkFact.cs" />
-    <Compile Include="Source\IffForm\INFO.cs" />
-    <Compile Include="Source\IffForm\INFOsub.cs" />
-    <Compile Include="Source\IffForm\RiffForm.cs" />
-    <Compile Include="Source\IffForm\SMPLOOP.cs" />
-    <Compile Include="Source\IffForm\SUBCHUNK.cs" />
-    <Compile Include="Source\IffForm\wnfo.cs" />
-    <Compile Include="Source\IffForm\ZSTR.cs" />
-    <Compile Include="Source\IffForm\_cue.cs" />
-    <Compile Include="Source\IffForm\WaveFormat.cs" />
-    <Compile Include="Source\IffForm\_inst.cs" />
+    <Compile Include="Source\Windowing\AbstractWave.cs" />
+    <Compile Include="Source\Windowing\BasicWindow.cs" />
+    <Compile Include="Source\Windowing\DataRead.cs" />
+    <Compile Include="Source\Windowing\FastFourierTransform.cs" />
+    <Compile Include="Source\Windowing\IRead.cs" />
+    <Compile Include="Source\Windowing\IWaveData.cs" />
+    <Compile Include="Source\Windowing\MinMaxEvent.cs" />
     <Compile Include="Strings.Designer.cs">
       <DependentUpon>Strings.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -334,7 +341,10 @@
     <Compile Include="Source\System.Sound\MidiHelper.cs" />
     <Compile Include="Source\Wave\Int32WaveChannelBase.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Source\Formats\IffForm" />
+    <Folder Include="Source\Windowing" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Win32-DLL\DrumSynth2Wave\ds2wav.dll">
       <Link>ds2wav.dll</Link>

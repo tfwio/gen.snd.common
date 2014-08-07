@@ -76,13 +76,9 @@ namespace gen.snd.Forms
 			get { return this.textBox1.Text; }
 			set { this.textBox1.Text = value; }
 		}
-		bool IsWaveReady
-		{
-			get {
-				return
-					!string.IsNullOrEmpty(WaveFile) ||
-					File.Exists(WaveFile);
-			}
+
+		bool IsWaveReady {
+			get { return !string.IsNullOrEmpty(WaveFile) || File.Exists(WaveFile); }
 		}
 
 		#endregion
@@ -182,7 +178,6 @@ namespace gen.snd.Forms
 		protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
 		{
 			base.OnClosing(e);
-			
 			timer1.Dispose();
 			timer1 = null;
 			Playback_Clear();

@@ -26,6 +26,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using gen.snd.Formats;
+using gen.snd.Formats.ImpluseTracker;
 
 namespace ititoo
 {
